@@ -119,4 +119,10 @@ public class ProductController {
         return marges;
     }
 
+    //Retourner les produits triés par ordre alphabétiques
+    @GetMapping(value = "/ProduitsTries")
+    public List<Product> trierProduitsParOrdreAlphabetique() {
+
+        return productDao.findAllByOrderByNom();
+    }
 }

@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "88c3dd5e-f89f-4648-a62e-34e2e80c77aa",
+		"name": "MOOC_Microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "44091e2f-e3f2-4602-8cfc-f6750edfaf2c",
+			"name": "Création Nouveau Produit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 4,\n  \"name\": \"Poney en bois cracheur de feu\",\n  \"price\": 0,\n  \"buyingPrice\": 100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "8beba86d-79bd-4e89-a6d4-a9176d3c1d64",
+			"name": "Affichage Marge",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 4,\n  \"name\": \"Poney en bois cracheur de feu\",\n  \"price\": 0,\n  \"buyingPrice\": 100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/AdminProduits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"AdminProduits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "4aec58db-43bc-4f6f-b216-248d0cc651a5",
+			"name": "Tri Alphabétique",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 4,\n  \"name\": \"Poney en bois cracheur de feu\",\n  \"price\": 0,\n  \"buyingPrice\": 100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/ProduitsTries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"ProduitsTries"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
